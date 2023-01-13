@@ -16,10 +16,6 @@ body {
     font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
-    margin-bottom: 30px;
-}
-
 h2 {
     margin-bottom: 25px;
 }
@@ -33,7 +29,7 @@ h4 {
 }
 
 h5 {
-    margin-bottom: 8px;
+    margin-bottom: 3px;
 }
 
 .sidebar {
@@ -53,6 +49,10 @@ h5 {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+}
+
+.sidebar ul li:first-child {
+    margin-bottom: 40px;
 }
 
 .sidebar ul li:nth-child(6) {
@@ -116,6 +116,10 @@ input {
     font-weight: normal;
 }
 
+.buttons {
+    align-self: end;
+}
+
 button {
     background-color: var(--main-color);
     border: 1px var(--main-color);
@@ -123,7 +127,7 @@ button {
     color: #fff;
     cursor: pointer;
     padding: 12px 20px;
-    margin: 8px;
+    margin: 0 8px;
 }
 
 button:last-child {
@@ -197,11 +201,14 @@ button:last-child {
 }
 
 .trending-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
     margin-bottom: 15px;
 }
 
 .trending-card p {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .trending-card:last-child {
@@ -214,7 +221,7 @@ button:last-child {
     height: 18px;
 }
 
-.icon+h1 {
+#dashboard {
     width: 30px;
     height: 30px;
 }
